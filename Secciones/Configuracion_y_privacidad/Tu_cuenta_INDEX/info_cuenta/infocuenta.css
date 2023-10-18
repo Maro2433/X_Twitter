@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.principal {
+    grid-column: 2;
+    color: white;
+    border-right: 1px solid #2F3336;
+    height: 100vh;
+}
+
+.principal .tittleconfig {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.barsearch {
+    padding: 12px;
+    display: flex;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.barsearch img {
+    width: 19px;
+    margin-right: 5px;
+}
+
+.barsearch input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+    width: auto;
+}
+
+/* ---------- Efecto cambio de color input --------- */
+
+/* Estilos iniciales */
+#elementoClicable {
+    background: #000000;
+    border: 1px solid #2F3336 ;
+    cursor: pointer; 
+}
+
+/* Estilos cuando se hace clic */
+#elementoClicable.clickeado {
+    background-color: #000000;
+    border-color: #1D9BF0; 
+}
+
+/*
+.principal ul {
+    
+}
+*/
+
+.principal ul li {
+    list-style: none;
+    display: flex;
+}
+/*
+.principal ul li img {
+}
+*/
+.principal ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.principal ul li a:hover {
+    background-color: #16181C ;
+    transition: 0.2s;
+}
+
+.principal .tucuenta {
+    background-color: #16181C ;
+    border-right: 2px solid #1A8CD8;
+}
+
+
+
+
+/* ------------- CONTENIDO DERECHOOOOOOOOOOOOO ----------*/
+
+.infocuenta {
+    grid-column: 3;
+    border-right: 1px solid #2F3336;
+}
+
+.bordersito {
+    border-bottom: 1px solid #2F3336;
+}
+
+.infocuenta span {
+    color: white;
+    font-size: 20px;
+}
+
+.infotittle {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.infotittle img {
+    margin-right: 1rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.infotittle img:hover {
+    border-radius: 50%;
+    background-color: #16181C;
+}
+
+.confirmpass {
+    padding: 10px 0 0 15px;
+}
+
+.confirmpass p {
+    margin: 25px 0 12px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #71767B;
+}
+
+.barpasscont {
+    padding: 15px;
+}
+
+/*
+.barpass {
+}
+*/
+
+.barpasscont input {
+    padding: 18px 0 18px 10px;
+    background-color: transparent;
+    outline: none;
+    border: .5px #494949 solid;
+    border-radius: 5px;
+    width: 98%;
+    color: #eee;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.barpasscont label {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 51.5rem;
+    top: 11rem;
+    padding: 0 4px;
+    color:  #71767B;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.barpasscont input:focus {
+    border-color: #1D9BF0;
+}
+
+.barpasscont input:focus~label {
+    top: 10rem;
+    font-size: 12px;
+    color: #1D9BF0 ;
+}
+
+
+
+.barpasscont a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1D9BF0;
+}
+
+.btconfirm {
+    cursor: pointer;
+    padding: 0 15px 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.btconfirm span {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    background-color: #1D9BF0;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.btconfirm span:hover {
+    background-color: #198DDA;
+}
