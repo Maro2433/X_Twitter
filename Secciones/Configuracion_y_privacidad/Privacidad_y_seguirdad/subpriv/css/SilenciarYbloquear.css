@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.principal {
+    grid-column: 2;
+    color: white;
+    border-right: 1px solid #2F3336;
+    height: 100vh;
+}
+
+.principal .tittleconfig {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.barsearch {
+    padding: 12px;
+    display: flex;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.barsearch img {
+    width: 19px;
+    margin-right: 5px;
+}
+
+.barsearch input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+    width: auto;
+}
+
+/* ---------- Efecto cambio de color input --------- */
+
+/* Estilos iniciales */
+#elementoClicable {
+    background: #000000;
+    border: 1px solid #2F3336 ;
+    cursor: pointer; 
+}
+
+/* Estilos cuando se hace clic */
+#elementoClicable.clickeado {
+    background-color: #000000;
+    border-color: #1D9BF0; 
+}
+
+/*
+.principal ul {
+    
+}
+*/
+
+.principal ul li {
+    list-style: none;
+    display: flex;
+}
+/*
+.principal ul li img {
+}
+*/
+.principal ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.principal ul li a:hover {
+    background-color: #16181C ;
+    transition: 0.2s;
+}
+
+/* ------------- CONTENIDO DERECHOOOOOOOOOOOOO ----------*/
+
+.PrivacidadYseguridad {
+    grid-column: 3;
+    border-right: 1px solid #2F3336;
+}
+
+.PrivacidadYseguridad .tu-title {
+    padding: 15px;
+    display: flex;
+}
+
+.PrivacidadYseguridad .tu-title span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.PrivacidadYseguridad .tu-title p{
+    margin-top: 27px;
+    color: #71767B;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+.categorias .categoria-tucuenta {
+    display: flex;
+}
+
+.categorias .categoria-tucuenta a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias .cat {
+
+}
+*/
+
+.categorias {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.categoria-priv a {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.categoria-priv #hover:hover {
+    background-color: #16181C ;
+    transition: 0.2s;
+}
+
+.categoria-priv a .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria-priv a .info p {
+    color: #71767B;
+    font-size: 13px;
+}
+
+.parrafo {
+    color: #71767B;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.categoria-priv a{
+    padding: 13px ;
+}
+
+.tu-title img {
+    width: 19px;
+    height: 19px;
+}
+
+.categorias .categoria-priv a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias .flechita {
+    margin-left: auto;
+}
+
+.categorias .flechita img {
+    margin-left: auto;
+}
+
+/**/
+
+.checkbox {
+    position: relative;
+  }
+  
+  .checkbox input {
+    display: none;
+  }
+  
+  .checkbox .check {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: 2px solid gray; /* Cambiar el color del borde a gris */
+    text-align: center; /* Centrar el chulo horizontalmente */
+    position: relative; /* Usar position relative */
+    border-radius: 4px;
+  }
+  
+  .checkbox input:checked ~ .check {
+    background-color: #1d9bee;
+    border-radius: 4px;
+  }
+  
+  .checkbox input:checked ~ .check::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg);
+  }
+
+  .flechaatras{
+    display: flex;
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .flechaatras:hover {
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}

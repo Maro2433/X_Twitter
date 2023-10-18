@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: rgb(36, 45, 52);
     margin: 0;
@@ -192,4 +193,200 @@ input:focus::placeholder {
 .registro:hover {
     text-decoration: underline;
     cursor: pointer;
+=======
+body {
+    background-color: rgb(36, 45, 52);
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.login_caja {
+    background-color: black;
+    padding: 0px 0px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+.login_superior {
+    height: 100%;
+    display: flex;
+    padding: 5px;
+}
+.boton_circular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+.boton_circular:hover {
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+.imagen {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_texto {
+    display: flex;
+    color: white;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 50px;
+}
+.login_caja_de_texto_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.caja_de_texto_01 {
+    width: 65%;
+    height: 50px;
+    text-align: left;
+    background: black;
+    border: 2px solid rgb(50, 50, 50);
+    color: white;
+    font-size: 15px;
+}
+.login_caja_de_texto_02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+.caja_de_texto_02 {
+    width: 65%;
+    height: 50px;
+    text-align: left;
+    background: black;
+    border: 2px solid rgb(50, 50, 50);
+    color: white;
+    font-size: 15px;
+}
+input {
+    border: 2px solid rgb(50, 50, 50);
+    padding: 5px 10px;
+    color: white;
+    transition: border-color 0.3s;
+}
+input::placeholder {
+    position: absolute;
+}
+input:focus {
+    border-color: #1D9BF0;
+    outline: none;
+}
+input:focus::placeholder {
+    color: #1D9BF0;
+    top: 5px;
+    left: 10px;
+    font-size: 13px;
+    transition: color 0.3s, top 0.3s, left 0.3s, font-size 0.3s;
+}
+.custom-placeholder_01 {
+    position: absolute;
+    font-size: 13px;
+    top: 23.6%;
+    left: 19.1%;
+    transform: translateY(-50%);
+    color: #726d68;
+    pointer-events: none; 
+    transition: opacity 0s, color 0.3s;
+    opacity: 0;
+}
+.custom-placeholder_02 {
+    position: absolute;
+    font-size: 13px;
+    top: 37.8%;
+    left: 19.1%;
+    transform: translateY(-50%);
+    color: #726d68;
+    pointer-events: none; 
+    transition: opacity 0s, color 0.3s;
+    opacity: 0;
+}
+.login_caja_de_texto_01 input:not(:placeholder-shown) + .custom-placeholder_01, 
+.login_caja_de_texto_02 input:not(:placeholder-shown) + .custom-placeholder_02 {
+    opacity: 1;
+}
+.login_caja_de_texto_01 input:focus + .custom-placeholder_01, 
+.login_caja_de_texto_02 input:focus + .custom-placeholder_02 {
+    color: #1D9BF0;
+}
+.login_contraseña {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px;
+    margin-bottom: 60px;
+}
+.login_contraseña a {
+    width: 65%;
+    text-align: left;
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+    margin-bottom: 120px;
+}
+.login_contraseña a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login_botones {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 5px 20px;
+    align-items: center;
+}
+.boton_iniciar_sesion {
+    width: 75%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.boton_iniciar_sesion:hover {
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+.login_registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    padding: 10px 10px 10px 75px;
+}
+.registro {
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+.registro:hover {
+    text-decoration: underline;
+    cursor: pointer;
+>>>>>>> 22ed254a3573bd198870c3d771b559f4deee8160
 }

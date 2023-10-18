@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.principal {
+    grid-column: 2;
+    color: white;
+    border-right: 1px solid #2F3336;
+    height: 190vh;
+}
+
+.principal .tittleconfig {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.barsearch {
+    padding: 12px;
+    display: flex;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.barsearch img {
+    width: 19px;
+    margin-right: 5px;
+}
+
+.barsearch input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+    width: auto;
+}
+
+/* ---------- Efecto cambio de color input --------- */
+
+/* Estilos iniciales */
+#elementoClicable {
+    background: #000000;
+    border: 1px solid #2F3336 ;
+    cursor: pointer; 
+}
+
+/* Estilos cuando se hace clic */
+#elementoClicable.clickeado {
+    background-color: #000000;
+    border-color: #1D9BF0; 
+}
+
+/*
+.principal ul {
+    
+}
+*/
+
+.principal ul li {
+    list-style: none;
+    display: flex;
+}
+/*
+.principal ul li img {
+}
+*/
+.principal ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer
+}
+
+.principal ul li a:hover {
+    background-color: #16181C ;
+    transition: 0.2s;
+}
+
+.principal .Accesibilidad {
+    background-color: #16181C ;
+    border-right: 2px solid #1A8CD8;
+}
+
+
+/* ------------- CONTENIDO DERECHOOOOOOOOOOOOO ----------*/
+
+.Accesibilidad {
+    grid-column: 3;
+    border-right: 1px solid #2F3336;
+}
+
+.Accesibilidad .tu-title {
+    padding: 15px;
+}
+
+.Accesibilidad .tu-title span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Accesibilidad .tu-title p{
+    margin-top: 27px;
+    color: #71767B;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+.categorias .categoria-tucuenta {
+    display: flex;
+}
+
+.categorias .categoria-tucuenta a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias .cat {
+
+}
+*/
+
+.categorias {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.categoria-acce a {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.categoria-acce a:hover {
+    background-color: #16181C ;
+    transition: 0.2s;
+}
+
+.categoria-acce a .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria-acce a .info p {
+    color: #71767B;
+    font-size: 13px;
+}
+
+.categoria-acce a img {
+    padding: 25px ;
+    width: 19px;
+    height: 19px;
+}
+
+.categorias .categoria-acce a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias .flechita {
+    margin-left: auto;
+}
+
+.categorias .flechita img {
+    margin-left: auto;
+}
