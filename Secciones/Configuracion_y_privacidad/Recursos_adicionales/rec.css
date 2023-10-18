@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.principal {
+    grid-column: 2;
+    color: white;
+    border-right: 1px solid #2F3336;
+    height: 100%;
+}
+
+.principal .tittleconfig {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.barsearch {
+    padding: 12px;
+    display: flex;
+    border-radius: 30px;
+    margin: 3px;
+}
+
+.barsearch img {
+    width: 19px;
+    margin-right: 5px;
+}
+
+.barsearch input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+    width: auto;
+}
+
+/* ---------- Efecto cambio de color input --------- */
+
+/* Estilos iniciales */
+#elementoClicable {
+    background: #000000;
+    border: 1px solid #2F3336 ;
+    cursor: pointer; 
+}
+
+/* Estilos cuando se hace clic */
+#elementoClicable.clickeado {
+    background-color: #000000;
+    border-color: #1D9BF0; 
+}
+
+/*
+.principal ul {
+    
+}
+*/
+
+.principal ul li {
+    list-style: none;
+    display: flex;
+}
+/*
+.principal ul li img {
+}
+*/
+.principal ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.principal ul li a:hover {
+    background-color: #16181C ;
+    transition: 0.2s;
+}
+
+.principal .recc {
+    background-color: #16181C ;
+    border-right: 2px solid #1A8CD8;
+}
+
+
+/* ------------- CONTENIDO DERECHOOOOOOOOOOOOO ----------*/
+
+.infocuenta {
+    grid-column: 3;
+    border-right: 1px solid #2F3336;
+}
+
+.bordersito {
+    border-bottom: 1px solid #2F3336;
+}
+
+.infocuenta .infotittle span {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.infotittle {
+    display: flex;
+    align-items: center;
+}
+
+.infocuenta .sub {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #71767B;
+}
+
+.infocuenta .notas {
+    padding: 15px 0 0 0;
+}
+
+.infocuenta .notas span{
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.infocuenta .notas a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    transition: 0.2s;
+    margin: 16px 0 4px 0;
+}
+
+.infocuenta .notas a:hover{
+    background-color: #16181C ;
+}
+
+.legalito span {
+    display: inline-block; 
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+
+.legalito ul li {
+    list-style: none;
+}
+
+.legalito ul li a{
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.legalito ul li:hover{
+    background-color: #16181C ;
+}
+
+.varios {
+    margin-bottom: 55px;
+}
+.varios span {
+    display: inline-block; 
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+
+.varios ul li {
+    list-style: none;
+}
+
+.varios ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.varios ul li:hover{
+    background-color: #16181C ;
+}

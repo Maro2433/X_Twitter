@@ -1,0 +1,1351 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+
+.left-sidebar { 
+    position: fixed;   
+    height: 100vh;
+    border-right: 1px solid #2F3336;
+    width: 274px;
+}
+
+.left-sidebar .logo {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;    
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.left-sidebar .logo:hover {
+    background: rgba(223, 223, 223, 0.1);
+    
+}
+
+.left-sidebar .logo img {
+    width: 26px;
+}
+
+/*-----------items del slide----------*/
+
+.sidebar-content {
+    text-decoration: none;
+}
+
+.sidebar-content img {
+    height: 26.25px;
+    margin-right: 20px;
+}
+
+.slide-items {
+    font-size: 20px;
+    transition: background-color 0.3s;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+}
+
+.slide-items .item {
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    padding: 12px;
+    border-radius: 100px;
+}
+
+.slide-items .item:hover {
+    background: rgba(223, 223, 223, 0.1);
+    border-radius: 100px;
+}
+
+#more-options {
+    font-size: 20px;
+    transition: background-color 0.3s;
+    border-radius: 100px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#more-options .options-content {
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: flex;
+    padding: 12px;
+    border-radius: 100px;
+}
+
+#more-options .options-content:hover {
+    background: rgba(223, 223, 223, 0.1);
+    border-radius: 100px;
+}
+
+/* =============== Menu de opciones ============ */
+
+#floating-window {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 236px;
+    left: 0px;
+}
+
+.win {
+    width: 320px;
+    border-radius: 10px ;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgb(204, 203, 203);
+    list-style: none;
+    display: fixed;
+}
+
+.win a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.win .winsup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.win .winsup img {
+    margin-right: 24px;   
+}
+
+.win .winsup li {
+    display: flex;
+    align-items: center;
+}
+
+.win .winsup .conectar li {
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+.win .winsup .monetizar li {
+    padding: 15px;
+}
+
+.conectar li:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+.monetizar li:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+.border {
+    width: 300px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    border: 1px solid rgba(223, 223, 223, 0.1);
+}
+
+/*======= parte de abajo =====*/
+
+.dropdown-content {
+    display: none;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.winsdowns li {
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.winsdowns li span {
+    color: white;
+    font-weight: bold;
+}
+
+.winsdowns #btn1 {
+    cursor: pointer;
+}
+
+.winsdowns #btn2 {
+    cursor: pointer;
+}
+
+.winsdowns #btn3 {
+    cursor: pointer;
+}
+
+#btn1:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+#btn2:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+#btn3:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+.dropdown-content {
+    cursor: pointer;
+    padding: 15px;
+}
+
+.dropdown-content a {
+    display: flex;
+}
+
+.dropdown-content img {
+    width: 20px ;
+    margin-right: 10px;
+}
+
+.dropdown-content:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+.dropdown-content3 {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown-content3 a {
+    display: flex;
+    padding: 12px;
+}
+
+.dropdown-content3 a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-content3 a:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+/* ==========================*/
+
+.tweet-button {
+    background-color: #1D9BF0;
+    color: white;
+    border: 0px solid #fff;
+    border-radius: 100px;
+    padding: 0 100px;
+    font-size: 17px;
+    position: absolute;
+    cursor: pointer;
+    width: 230px;
+    height: 51px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tweet-button span {
+    position: relative;
+    text-align: center;
+    right: 15px;
+}
+
+.tweet-button:hover {
+    background-color: #198dda ;
+}
+
+/*=============================*/
+
+
+.account {
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    right: 25px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 12px 12px 12px 12px;
+}
+
+.account:hover {
+    background: rgba(223, 223, 223, 0.1);
+    border-radius: 100px;
+}
+
+.account .acc-logo img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.account .acc-text {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    color: rgb(102, 102, 102);
+}
+
+.account .acc-text span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.account .acc-points {
+    margin-left: 50px;
+}
+
+.account .acc-points img {
+    width: 20px;
+}
+
+
+/* -------------------Ventana de user-------------------- */
+
+#userwindows {
+    display: none;
+    position: absolute;
+    top: 440px;
+    left: 110px;
+}
+
+.userwins {
+    width: 320px;
+    border-radius: 10px ;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgb(204, 203, 203);
+    list-style: none;
+    display: fixed;
+}
+
+.userwins .usersup img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.userwins .usersup .user {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px 15px 15px;
+}
+
+.userwins .usersup .user .username {
+    font-size: 150x;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.userwins .usersup .user .usercheck {
+    margin-left: auto;
+}
+
+.userwins .usersup .user .usercheck img {
+    width: 18px;
+}
+
+
+.border {
+    top: 5px;
+    border: 1px solid rgba(223, 223, 223, 0.1);
+}
+
+
+
+/*======= parte de abajo =====*/
+
+.user-down {
+    margin-top: 10px;
+}
+
+.userdown-content li {
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+
+.user-down li span {
+    color: white;
+    font-weight: bold;
+}
+
+.user-down .usr1 {
+    cursor: pointer;
+}
+
+.user-down .usr2 {
+    cursor: pointer;
+}
+
+.user-down .usr3 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.usr1:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+.usr2:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+.usr3:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+}
+
+
+
+/*----Inicio Contenido Principal----*/
+
+/*===== header-top =======*/
+
+/*============ Listas fiajadas =======*/
+
+.content-main {
+    grid-column: 2;
+    color: white;
+    
+}
+
+.listrecom {
+    border-bottom: 1px solid #2F3336;
+}
+
+.header-listfj {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    max-width: 100%; 
+    position: sticky;
+    top: 0;
+    padding: 15px;
+}
+
+.arrow img {
+    display: flex;
+    width: 18px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.arrow img:hover{
+    background: rgba(223, 223, 223, 0.1);
+    border-radius: 100px;
+}
+
+.header-listfj span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content-main .cuadritos img {
+    width: 600px;
+}
+
+.header-elige {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.textlist {
+    color: #5e5e5e;
+    font-size: 16px;
+    padding: 15px 15px 15px 15px;
+}
+
+
+/* ========= Contenido central =======*/
+/*
+.contmain {
+
+}
+*/
+.contmain .tittle {
+    padding: 15px;
+}
+.contmain .tittle span {
+    font-weight: bold;
+    font-size: 20px;
+}
+/*
+.lisst {
+}
+*/
+.lisst1, .lisst2, .lisst3 {
+    padding: 15px 0 5px 15px;
+    cursor: pointer;
+}
+
+
+
+.lisst1:hover {
+    background: rgba(223, 223, 223, 0.1);
+}
+.lisst2:hover {
+    background: rgba(223, 223, 223, 0.1);
+}
+.lisst3:hover {
+    background: rgba(223, 223, 223, 0.1);
+}
+
+/* --------- Primera lista ------*/
+
+
+.lisst .lisst1 {
+    display: flex;
+    align-items: center;
+}
+
+.lisst .lisst1 img {
+    width: 47px;
+    height: 47px;
+    border-radius: 10px;
+    margin-right: 15px; 
+
+}
+.lisst .lisst1 .list1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.lisst .lisst1 .lisstitle1 {
+    display: flex;
+}
+
+
+
+.lisst .lisst1 .lisstitle1 p {
+    color: #5e5e5e;
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.lisst .lisst1 .lisstsub1 {
+    font-size: 13px;
+    color: #5e5e5e;
+}
+
+.lisst .lisst1 .cruz {
+    margin-left: auto;
+}
+
+.lisst .lisst1 .cruz img {
+    border-radius: 50%; /* Hacer el fondo circular */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px;
+    width: 15px;
+    height: 15px; 
+}
+
+/*----------- Segunda lista ---------*/
+
+.lisst .lisst2 {
+    display: flex;
+    align-items: center;
+}
+
+.lisst .lisst2 img {
+    width: 47px;
+    height: 47px;
+    border-radius: 10px;
+    margin-right: 15px; 
+
+}
+.lisst .lisst2 .list2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.lisst .lisst2 .lisstitle2 {
+    display: flex;
+}
+
+.lisst .lisst2 .lisstitle2 p {
+    color: #5e5e5e;
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.lisst .lisst2 .lisstsub2 {
+    font-size: 13px;
+    color: #5e5e5e;
+}
+
+.lisst .lisst2 .cruz {
+    margin-left: auto;
+}
+
+.lisst .lisst2 .cruz img {
+    border-radius: 50%; 
+    background-color: #fff;
+    padding: 10px;
+    width: 15px;
+    height: 15px; 
+}
+
+/* ---------- Tercera lista ----- */
+
+.lisst .lisst3 {
+    display: flex;
+    align-items: center;
+}
+
+.lisst .lisst3 img {
+    width: 47px;
+    height: 47px;
+    border-radius: 10px;
+    margin-right: 15px; 
+
+}
+.lisst .lisst3 .list3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.lisst .lisst3 .lisstitle3 {
+    display: flex;
+}
+
+.lisst .lisst3 .lisstitle3 p {
+    color: #5e5e5e;
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.lisst .lisst3 .lisstsub3 {
+    font-size: 13px;
+    color: #5e5e5e;
+}
+
+.lisst .lisst3 .cruz {
+    margin-left: auto;
+}
+
+.lisst .lisst3 .cruz img {
+    border-radius: 50%; /* Hacer el fondo circular */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px;
+    width: 15px;
+    height: 15px; 
+}
+
+/*---------Mostrar mas -----*/
+
+.mostrar {
+    cursor: pointer;
+    padding: 20px 15px;
+}
+
+.mostrar a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #1D9BF0;
+}
+
+.mostrar:hover {
+    background: rgba(223, 223, 223, 0.1);
+}
+
+/*------- Tus listas -----*/
+
+.tulistas {
+    padding: 15px;
+    border-top: 1px solid #2F3336;
+}
+
+.tulistas span {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.tulistas .tulisp {
+    margin-top: 30px;
+    padding: 20px 12px;
+    color: #5e5e5e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linea {
+    grid-column: 3;
+    border-left: 1px solid #2F3336 ;
+}
+
+/*===========Sidebar Derecho============*/
+
+.right-sidebar {
+    background-color: black;
+    right: 0;
+    padding: 10px;
+    color: #fff; 
+    height: 100vh;
+    position: absolute;
+}
+
+.box {
+    position: fixed;
+    z-index: 10;
+    background-color: #000;
+    width: 400px;
+    margin: 0 auto;
+    right: 50px;
+    top: -10px;
+    padding: 10px;
+}
+
+.search-box {
+    margin-top: 10px;
+}
+
+.search-box input {
+    width: 310px;
+    padding: 15px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    border-radius: 50px;
+    right: 0px;
+    position: relative;
+    font-size: 15px;
+}
+
+
+
+.whats-happening-box{
+    position: relative;
+    right: 110px;
+    top: 70px;
+    padding: 10px;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 90px;
+    background-color: #16181c;
+    border-radius: 10px;
+    height: 405px;
+    width: 320px;
+}
+
+.whats-happening-box h2 {
+    position: relative;
+    left: 10px;
+}
+
+.titulos {
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.titulos h4 {
+    font-size: 13px;
+    color: #71767b;
+    margin-bottom: 10px;
+}
+
+.titulos span {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.titulos-img {
+    width: 20px;
+    height: 20px;
+}
+
+.titulos-img img {
+    position: relative;
+    left: 250px;
+    top: -45px;
+    width: 100%;
+    height: 100%;
+}
+
+.titulos:hover {
+    background-color: rgba(223, 223, 223, 0.1);
+    width: 300px;
+    border-radius: 5px;
+}
+
+.btn-mostrar {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.mostrar-mas{
+    padding: 10px;
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: -20px;
+    height: 30px;
+    width: 320px;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    transition: all 100ms ease;
+}
+
+.mostrar-mas a {
+    position: relative;
+    left: 10px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.mostrar-mas span {
+    color: #1b7dbe;
+    font-size: 15px;
+    position: relative;
+}
+
+.mostrar-mas:hover{
+    background-color: #1d1f23;
+    border-radius: 10px;
+}
+
+
+
+.follow-box {
+    position: relative;
+    background-color: #16181c;
+    border-radius: 10px;
+    right: 110px;
+    padding: 10px 20px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: right;
+    height: 375px;
+    width: 300px;
+}
+
+.subscribe-box h2, .whats-happening-box h2, .follow-box h2 {
+    font-size: 20px;
+}
+
+.subscribe-box h6 {
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+}
+
+.follow-box button {
+    background-color: #16181c;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 40%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.whats-happening-box a:hover{
+    background-color: #1d1f23;
+}
+
+.subscribe-box button{
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 40%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.follow-box button {
+    width: 90px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-left: 50px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.follow-box button:hover {
+    background-color: rgba(255, 254, 254, 0.719);
+}
+
+
+.seg{
+    height: 80px;
+    top: 10px;
+    left: -20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.seg:hover {
+    background: rgba(223, 223, 223, 0.1);
+    border-radius: 5px;
+}
+
+.seg .seg1-img {
+    width: 40px;
+    height: 40px;
+}
+
+.seg .seg1-img img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.seg .seg1-text {
+    display: flex;
+    position: relative;
+    right: -10px;
+    flex-direction: column;
+    color: rgb(102, 102, 102);
+}
+
+.seg .seg1-text span {
+    width: 125px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* */
+.seg .seg2-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.seg .seg2-text {
+    display: flex;
+    position: relative;
+    right: -10px;
+    flex-direction: column;
+    color: rgb(102, 102, 102);
+}
+
+.seg .seg2-text span {
+    width: 125px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/**/
+.seg .seg3-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.seg .seg3-text {
+    display: flex;
+    position: relative;
+    right: -10px;
+    flex-direction: column;
+    color: rgb(102, 102, 102);
+}
+
+.seg .seg3-text span {
+    width: 125px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* ------ ventana flotante lista -----*/
+
+#winslist1 {
+    display: none;
+    position: absolute;
+    top: 480px;
+    left: 418px;
+}
+
+.winsyellow {
+    width: 300px;
+    border-radius: 10px ;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgb(204, 203, 203);
+    display: fixed;
+}
+
+
+.winsyellow img{
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+}
+
+/* ------ titulo ------ */
+.winsyellow .winstittle1 {
+    padding: 11px 0 11px;
+    text-align: center;
+}
+
+.winsyellow .winstittle1 span {
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* ------ contenido ------ */
+
+.winsyellow .winscotent1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winsyellow .winscotent1 img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.winsyellow .winscotent1 span {
+    color: white;
+    font-size: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.winsyellow .winscotent1 span:hover {
+    text-decoration: underline;
+}
+
+.winsyellow .winscotent1 p {
+    color: #5e5e5e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ----- Miembros/Follow -----*/
+
+.winsyellow .winsmembers1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.winsyellow .winsmembers1 .members1 {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-right: 20px;
+}
+
+.winsyellow .winsmembers1 .members1 span{
+    color: white;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.winsyellow .winsmembers1 .follows1 {
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.winsyellow .winsmembers1 .follows1 span{
+    color: white;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+/* ----- Seguir ----- */
+
+.winsyellow .bseguir1 {
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.winsyellow .bseguir1 button {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/*------- Segunda lista ------*/
+
+#winslist2 {
+    display: none;
+    position: absolute;
+    top: 548px;
+    left: 418px;
+}
+
+.winsazul {
+    width: 300px;
+    border-radius: 10px ;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgb(204, 203, 203);
+    display: fixed;
+}
+
+.winsazul img{
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+}
+
+/* ------ titulo ------ */
+.winsazul .winstittle2 {
+    padding: 11px 0 11px;
+    text-align: center;
+}
+
+.winsazul .winstittle2 span {
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* ------ contenido ------ */
+
+.winsazul .winscotent2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winsazul .winscotent2 img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.winsazul .winscotent2 span {
+    color: white;
+    font-size: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.winsazul .winscotent2 span:hover {
+    text-decoration: underline;
+}
+
+.winsazul .winscotent2 p {
+    color: #5e5e5e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ----- Miembros/Follow -----*/
+
+.winsazul .winsmembers2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.winsazul .winsmembers2 .members2 {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-right: 20px;
+}
+
+.winsazul .winsmembers2 .members2 span{
+    color: white;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.winsazul .winsmembers2 .follows2 {
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.winsazul .winsmembers2 .follows2 span{
+    color: white;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+/* ----- Seguir ----- */
+
+.winsazul .bseguir2 {
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.winsazul .bseguir2 button {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/*------- Tercera lista ------*/
+
+#winslist3 {
+    display: none;
+    position: absolute;
+    top: 615px;
+    left: 418px;
+}
+
+.winsgray {
+    width: 300px;
+    border-radius: 10px ;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgb(204, 203, 203);
+    display: fixed;
+}
+
+.winsgray img{
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+}
+
+/* ------ titulo ------ */
+.winsgray .winstittle3 {
+    padding: 11px 0 11px;
+    text-align: center;
+}
+
+.winsgray .winstittle3 span {
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* ------ contenido ------ */
+
+.winsgray .winscotent3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winsgray .winscotent3 img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.winsgray .winscotent3 span {
+    color: white;
+    font-size: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.winsgray .winscotent3 span:hover {
+    text-decoration: underline;
+}
+
+.winsgray .winscotent3 p {
+    color: #5e5e5e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ----- Miembros/Follow -----*/
+
+.winsgray .winsmembers3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.winsgray .winsmembers3 .members3 {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-right: 20px;
+}
+
+.winsgray .winsmembers3 .members3 span{
+    color: white;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.winsgray .winsmembers3 .follows3 {
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.winsgray .winsmembers3 .follows3 span{
+    color: white;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+/* ----- Seguir ----- */
+
+.winsgray .bseguir3 {
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.winsgray .bseguir3 button {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
