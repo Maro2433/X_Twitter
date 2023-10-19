@@ -183,3 +183,86 @@ seccionesIconoalt.forEach(seccionIconoalt => {
         }
     });
 });
+
+/*---------------------VENTANA SEGUIR---------------------------*/
+
+// Variables para el conteo de seguidores
+let siguiendoCount = 0;
+
+// Función para actualizar el contador de Siguiendo
+function actualizarSiguiendo() {
+  const siguiendoElement = document.getElementById("siguiendo");
+  siguiendoElement.textContent = siguiendoCount.toString();
+}
+
+// Función para seguir o dejar de seguir
+function seguir(idBoton) {
+  const boton = document.getElementById(idBoton);
+
+  if (boton.textContent === "Seguir") {
+    boton.textContent = "Siguiendo";
+    siguiendoCount++;
+  } else {
+    boton.textContent = "Seguir";
+    siguiendoCount--;
+  }
+
+  // Actualizar el contador de Siguiendo
+  actualizarSiguiendo();
+}
+
+// Agregar eventos a los botones de seguir
+const botonseguir1 = document.getElementById("botonseguir1");
+botonseguir1.addEventListener("click", function () {
+  seguir("botonseguir1");
+});
+
+const botonseguir2 = document.getElementById("botonseguir2");
+botonseguir2.addEventListener("click", function () {
+  seguir("botonseguir2");
+});
+
+const botonseguir3 = document.getElementById("botonseguir3");
+botonseguir3.addEventListener("click", function () {
+  seguir("botonseguir3");
+});
+
+const botonseguir4 = document.getElementById("botonseguir4");
+botonseguir4.addEventListener("click", function () {
+  seguir("botonseguir4");
+});
+
+const botonseguir5 = document.getElementById("botonseguir5");
+botonseguir5.addEventListener("click", function () {
+  seguir("botonseguir5");
+});
+
+const botonseguir6 = document.getElementById("botonseguir6");
+botonseguir6.addEventListener("click", function () {
+  seguir("botonseguir6");
+});
+
+const botonseguir7 = document.getElementById("botonseguir7");
+botonseguir7.addEventListener("click", function () {
+  seguir("botonseguir7");
+});
+
+const botonseguir8 = document.getElementById("botonseguir8");
+botonseguir8.addEventListener("click", function () {
+  seguir("botonseguir8");
+});
+
+const botonseguir9 = document.getElementById("botonseguir9");
+botonseguir9.addEventListener("click", function () {
+  seguir("botonseguir9");
+});
+
+const botonseguir10 = document.getElementById("botonseguir10");
+botonseguir10.addEventListener("click", function () {
+  seguir("botonseguir10");
+});
+
+const botonseguir11 = document.getElementById("botonseguir11");
+botonseguir11.addEventListener("click", function () {
+  seguir("botonseguir11");
+});

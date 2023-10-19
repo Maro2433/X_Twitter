@@ -115,3 +115,44 @@ document.addEventListener("click", function(event) {
 elementoClicable.addEventListener("click", function() {
     elementoClicable.classList.toggle("clickeado");
 });
+
+/*---------------------VENTANA SEGUIR---------------------------*/
+
+// Variables para el conteo de seguidores
+let siguiendoCount = 0;
+
+// Función para actualizar el contador de Siguiendo
+function actualizarSiguiendo() {
+  const siguiendoElement = document.getElementById("siguiendo");
+  siguiendoElement.textContent = siguiendoCount.toString();
+}
+
+// Función para seguir o dejar de seguir
+function seguir(idBoton) {
+  const boton = document.getElementById(idBoton);
+
+  if (boton.textContent === "Seguir") {
+    boton.textContent = "Siguiendo";
+  } else {
+    boton.textContent = "Seguir";
+  }
+
+  // Actualizar el contador de Siguiendo
+  actualizarSiguiendo();
+}
+
+// Agregar eventos a los botones de seguir
+const botonseguir1 = document.getElementById("botonseguir1");
+botonseguir1.addEventListener("click", function () {
+  seguir("botonseguir1");
+});
+
+const botonseguir2 = document.getElementById("botonseguir2");
+botonseguir2.addEventListener("click", function () {
+  seguir("botonseguir2");
+});
+
+const botonseguir3 = document.getElementById("botonseguir3");
+botonseguir3.addEventListener("click", function () {
+  seguir("botonseguir3");
+});

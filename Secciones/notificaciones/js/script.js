@@ -99,3 +99,41 @@ account.addEventListener("click", function (event) {
 document.addEventListener("click", function () {
   userWindow.style.display = "none";
 });
+
+/*---------------------VENTANA SEGUIR---------------------------*/
+
+const botonseguir1 = document.getElementById("botonseguir1")
+
+botonseguir1.addEventListener("click", function seguir(){
+
+    if(botonseguir1.textContent === "Seguir"){
+        botonseguir1.textContent = "Siguiendo";
+    }else {
+        botonseguir1.textContent = "Seguir";
+    }
+
+}) 
+
+const botonseguir2 = document.getElementById("botonseguir2")
+
+botonseguir2.addEventListener("click", function seguir(){
+
+    if(botonseguir2.textContent === "Seguir"){
+        botonseguir2.textContent = "Siguiendo";
+    }else {
+        botonseguir2.textContent = "Seguir";
+    }
+
+}) 
+
+const botonseguir3 = document.getElementById("botonseguir3")
+
+botonseguir3.addEventListener("click", function seguir(){
+
+    if(botonseguir3.textContent === "Seguir"){
+        botonseguir3.textContent = "Siguiendo";
+    }else {
+        botonseguir3.textContent = "Seguir";
+    }
+
+})
