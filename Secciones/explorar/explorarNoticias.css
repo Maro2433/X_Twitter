@@ -569,7 +569,7 @@ main {
   }
   .lbTipo{
     color: #555;
-    font-size: 11px;
+    font-size: 13px;
   }
   .lbTendencia{
     color: #fff;
@@ -793,7 +793,7 @@ main {
 .titulos-img {
   position: relative;
   right: -600px;
-  margin: -40px 10px;
+  margin: -70px 10px;
   width: 20px;
   height: 20px;
   

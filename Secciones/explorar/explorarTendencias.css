@@ -482,10 +482,13 @@ main {
     left: 22%;
     border-radius: 50px;
 }
+
+
   
   .menu .ul .active {
     
     color: #fff;
+    
     
     
   }
@@ -546,30 +549,21 @@ main {
     margin: 0px ;
     border: 1px rgb(31,33,35,255) solid;
   }
-  /*Estilos Div de Videos para ti */ 
-  .videosParaTi{
-    padding:20px 10px;
-    grid-column: 2/3;
-    border: 1px rgb(31,33,35,255) solid ;
-    
+
+  /*titulo tendencias */ 
+
+  .tTitulo{
+    margin: 5px 16px 15px 0px;
   }
-  .v{
-    
-    height: 207px;
-    width: 140px;
-    border: 1px #676b70 solid ;
-    border-radius: 5%;
-    margin: 17px 4px 0px 4px;
-    
-  }
-  .lbVideos{
+ .lblTitulo{
     color: #fff;
-    font-size: 20px;
-    border-radius: 15px;
-  }
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+ 
+ }
   .lbTipo{
     color: #555;
-    font-size: 11px;
+    font-size: 13px;
   }
   .lbTendencia{
     color: #fff;
@@ -793,7 +787,7 @@ main {
 .titulos-img {
   position: relative;
   right: -600px;
-  margin: -40px 10px;
+  margin: -70px 10px;
   width: 20px;
   height: 20px;
   
