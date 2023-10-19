@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License: PD. Made by Mary Akveo: https://maryakveo.com/ -->
+<svg fill="none" width="20px" height="20px" viewBox="0 0 24 24" id="download-5" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><polyline id="primary" points="15 14 12 17 9 14" style="fill: #ffffff; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+</polyline>
+<line id="primary-2" data-name="primary" x1="12" y1="17" x2="12" y2="3" style="fill: #ffffff; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+</line>
+<path id="primary-3" data-name="primary" d="M4,17v3a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V17" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+</path>
+</svg>

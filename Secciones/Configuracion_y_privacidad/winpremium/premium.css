@@ -1,0 +1,317 @@
+/* ------------ VENTANA DE PREMIUMM -------------*/
+
+
+/* El modal (fondo) */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Queda en lugar */
+    z-index: 1; /* Situado encima */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilitar scroll si es necesario */
+    background-color: rgba(80, 106, 124, 0.418); /* Color de fondo azul con opacidad */
+  }
+  
+  /* Contenido del modal */
+  
+  
+  /* El botón de cierre */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.winspremium {
+    /* Ajusta el tamaño del elemento .winspremium según sea necesario */
+    background-color: black;
+    width: 600px;
+    height: 670px;
+    border-radius: 16px;
+    overflow: auto;
+}
+
+
+.nav {
+    padding: 7px;
+    border-radius: 16px 0 0 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%; 
+    position: sticky;
+    top: 0;
+}
+
+.nav i{
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.nav i:hover{
+    background-color: rgb(225, 225, 225, 0.15) ;
+}
+
+#navi {
+    display: fixed;
+    background-color: rgb(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+}
+
+
+.header-top {
+    display: flex;
+    align-items: center;
+    max-width: 100%; 
+    position: sticky;
+    top: 0;
+}
+
+.container2 {
+    background-image:  url(../IMAGENES_NUEVAS/Sin-título-1.jpg);
+    background-position: center bottom 195%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14.5rem;
+}
+
+.suscript {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; /* Tamaño deseado */
+    height: auto; /* Altura deseada */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.suscript span {
+    color: white;
+    width: 59%;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.imgchida img {
+    height: 8.9rem;
+    width: 8.9rem;
+}
+
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiempo {
+    background-color: #2A2D30 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 73%; /* Tamaño deseado */
+    height: auto; /* Altura deseada */
+    border-radius: 50px;
+    padding: 2.2px;
+}
+
+.anual {
+    padding: 8px;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.anual span {
+    margin-left: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.anual p {
+    padding: 2px;
+    color: #BDEBD7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: #00251A ;
+    border-radius: 50px;
+    display: flex; 
+    align-items: center;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.mensual {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #6E7277 ;
+    margin-right: 70px;
+}
+
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.premium {
+    margin-top: 15px;
+    width: 73%; /* Tamaño deseado */
+    height: auto; /* Altura deseada */
+    border-radius: 10px;
+    color: white;
+    border: 2px solid #2A2D30;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 15px 10px;
+}
+
+.title img{
+    width: 23px;
+    margin-right: 10px;
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 4px 0 15px;
+}
+
+.texto ul {
+    margin-left: 12px;
+}
+
+.texto ul li {
+    padding: 4px;
+}
+
+.barra {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    padding-left: 14px;
+}
+
+.barra summary {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 7px;
+}
+
+.barra summary img{
+    pointer-events: none;
+    width: 25px;
+    margin-left: 10px;
+    transition: transform 0.2s, margin-left 0s;
+}
+
+details[open] summary img {
+    transform: rotate(180deg); /* Rota la imagen hacia arriba */
+    margin-left: 240px;
+}
+
+
+.barra summary:hover {
+    background-color: #16181C ;
+}
+
+.barra p {
+    color: #71767B;
+}
+
+.barra .contbar {
+    display: flex;
+    padding: 2px 15px 5px;
+    margin-bottom: 10px;
+}
+
+.contbar img {
+    width: 20px;
+}
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+}
+
+.container5 button {
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+    font-size: 15px;
+    width: 83%;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.container5 button:hover {
+    background-color: #dddddd;
+}
+
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.container6 p {
+    width: 83%;
+    color: #71767B;
+    font-size: 11.5px;
+    text-align: justify;
+}
+
+.container6 a {
+    color: #1D9BF0;
+    text-decoration: none;
+}
+
+.container6 a:hover {
+    text-decoration:underline;
+}
+
